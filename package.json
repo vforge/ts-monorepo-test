@@ -12,6 +12,7 @@
     "@types/node": "^12.12.21"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,lib,dist}"
   }
 }
