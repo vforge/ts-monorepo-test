@@ -1,5 +1,6 @@
 {
   "exclude": ["node_modules", "dist", "lib", "__tests__", "**/*.test*", "**/*.spec*"],
+  // "files": [],
   "compilerOptions": {
     "skipLibCheck": false,
     "target": "esnext",
@@ -20,6 +21,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
+    "paths": {
+      "@fandom/*": ["packages/*/src"]
+    },
     // https://github.com/RyanCavanaugh/learn-a/#tsconfigsettingsjson
     "composite": true,
     "declaration": true,

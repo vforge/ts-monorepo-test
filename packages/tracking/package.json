@@ -1,16 +1,12 @@
 {
   "name": "@fandom/tracking",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "tracking",
   "author": "Bartosz V. Bentkowski <vforge@users.noreply.github.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/tracking.js",
-  "typings": "lib/tracking.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "./lib/tracking.js",
+  "typings": "./lib/tracking.d.ts",
   "files": [
     "lib"
   ],
