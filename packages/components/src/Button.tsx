@@ -4,7 +4,7 @@ import { trackEvent } from "@vforge/tracking";
 
 type ButtonProps = {
   label: string;
-  onClick: (e: React.MouseEvent) => void;
+  onClick?: (e: React.MouseEvent) => void;
 };
 
 const ButtonStyled = styled.button`
@@ -17,7 +17,7 @@ const ButtonStyled = styled.button`
 function Button({label, onClick}: ButtonProps) {
   React.useEffect(() => {
     trackEvent({
-      action: 'Button Clicked',
+      action: 'Button initialized',
     });
   }, []);
 

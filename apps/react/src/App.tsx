@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Label>Click this button:</Label>
-      <Button>Hi, click me</Button>
+      <Button label="Hi, click me" />
     </div>
   );
 }

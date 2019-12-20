@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle } from "styled-components";
 
+import { trackEvent } from "@vforge/tracking";
+
 import * as serviceWorker from "./serviceWorker";
 import App from "./App";
 
@@ -12,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: sans-serif;
   }
 `;
+
+trackEvent({
+  action: 'Loaded',
+});
 
 ReactDOM.render(
   <React.Fragment>

@@ -1,2 +1,4 @@
-export * from "./Button";
-export * from "./Label";
+import Button from "./Button";
+import Label from "./Label";
+
+export { Button, Label };

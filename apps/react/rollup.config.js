@@ -1,17 +1,33 @@
-import resolve from '@rollup/plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
+
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+
+const globals = {
+  react: 'React',
+  'react-dom': 'ReactDOM',
+  'styled-components': 'styled-components',
+};
 
 export default {
   input: 'src/index.tsx',
   output: {
     file: 'build/main.js',
-    format: 'iife',
-    name: 'bundle'
+    format: 'cjs',
+    name: 'bundle',
+    globals,
   },
   plugins: [
-    resolve(),
-    typescript(),
+    resolve({
+      extensions,
+    }),
+    babel({
+      exclude: 'node_modules/**',
+      extensions,
+    }),
+    // typescript(),
     commonjs({
       include: 'node_modules/**',
       namedExports: {
@@ -41,5 +57,6 @@ export default {
         ],
       },
     })
-  ]
+  ],
+  external: Object.keys(globals),
 }
