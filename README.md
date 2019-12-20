@@ -75,5 +75,5 @@ $> cd apps/<application name> && yarn build
 
 ## Notes
 
-[1] - Actually does not executable in the browser because `react`, `react-dom`, and `styled-components` are not included. Including them would make the built file unreadable.
-[2] - Probably it's possible to de-dupe the `node_modules` from apps, but it was not investigated.
+* [1] - Actually does not executable in the browser because `react`, `react-dom`, and `styled-components` are not included. Including them would make the built file unreadable.
+* [2] - Probably it's possible to de-dupe the `node_modules` from apps, but it was not investigated.
