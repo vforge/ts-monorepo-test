@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "@rollup/plugin-typescript": "^2.0.1",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@vforge/components": "file:../../packages/components",
+    "@vforge/tracking": "file:../../packages/tracking",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-internal": "^1.0.4",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "styled-components": "4.4.1",
+    "tslib": "^1.10.0",
+    "typescript": "~3.7.3"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {}
+}

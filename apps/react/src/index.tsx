@@ -14,10 +14,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 ReactDOM.render(
-  <>
+  <React.Fragment>
     <GlobalStyle />
     <App />
-  </>,
+  </React.Fragment>,
   document.getElementById("root") as HTMLElement
 );
 
