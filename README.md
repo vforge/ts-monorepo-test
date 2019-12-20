@@ -43,7 +43,6 @@ Two sample applications:
 * `apps/components` - a browser script[1] that's using `@vforge/components`' components inside React ecosystem.
   * Rollup + Babel/TS combo is used.
 
-
 ### Installation of app dependency
 
 ```bash
