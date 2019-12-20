@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "@types/node": "^12.12.21",
+    "@vforge/tracking": "file:../../packages/tracking",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "typescript": "~3.7.3"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {}
+}

@@ -2,16 +2,23 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@types/styled-components": "^4.4.1",
     "lerna": "^3.19.0",
-    "typescript": "^3.7.3",
-    "@types/node": "^12.12.21"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts-ts": "^3.1.0",
+    "styled-components": "4.4.1",
+    "typescript": "^3.7.3"
   },
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": {
+    "prestart": "yarn build",
     "build": "tsc --build",
     "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,lib,dist}"
   }
