@@ -20,10 +20,10 @@ trackEvent({
 });
 
 ReactDOM.render(
-  <React.Fragment>
+  <div>
     <GlobalStyle />
     <App />
-  </React.Fragment>,
+  </div>,
   document.getElementById("root") as HTMLElement
 );
 

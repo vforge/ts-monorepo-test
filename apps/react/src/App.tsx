@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Label>Click this button:</Label>
-      <Button label="Hi, click me" />
+      <Button label="Hi, click me" onClick={() => alert('clicked')}/>
     </div>
   );
 }

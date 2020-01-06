@@ -8,14 +8,14 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
-  'styled-components': 'styled-components',
+  'styled-components': 'styled',
 };
 
 export default {
   input: 'src/index.tsx',
   output: {
     file: 'build/main.js',
-    format: 'cjs',
+    format: 'iife',
     name: 'bundle',
     globals,
   },
